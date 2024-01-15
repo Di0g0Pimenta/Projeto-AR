@@ -1,0 +1,24 @@
+<head>
+   
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+   
+</head>
+
+<body>
+    <a-scene embedded arjs>
+        <a-assets>
+            <a-asset-item id="trofeu" src='assets/trophy.glb'></a-asset-item>
+              </a-assets>
+
+ <a-marker preset='hiro'>
+            <a-entity gltf-model='#trofeu' rotation="0 -90 90"></a-entity>
+    </a-marker> 
+
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
